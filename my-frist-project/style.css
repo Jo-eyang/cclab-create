@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.big{
+    font-size: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#yellow{
+    color: rgb(211, 204, 95);
+}
+#pink{
+    color: rgb(221, 143, 182);
+}
+a:hover{
+    color:deeppink
+}
