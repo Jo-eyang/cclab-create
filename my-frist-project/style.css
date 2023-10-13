@@ -1,21 +1,58 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(46, 56, 52);
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
 .big{
-    font-size: 100px;
+    font-size: 70px;
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
 }
 #yellow{
-    color: rgb(211, 204, 95);
+    color: rgb(247, 238, 148);
 }
 #pink{
     color: rgb(221, 143, 182);
 }
 a:hover{
     color:deeppink
+}
+
+#title{
+    text-align: center;
+}
+
+#content{
+    width: 80%;
+    position: relative;
+    left: 15%;
+    padding: 20px;
+}
+
+.left{
+    float: left;
+    width: 50%;
+}
+
+.right{
+    float: right;
+    width: 50%
+}
+
+.two-columns:after{
+    content:"";
+    display:table;
+    clear:both
+}
+
+#footer{
+    text-align: center;
+    font-size: small;
+}
+
+#p5-canvas{
+    width: 10%;
+    height: auto;
 }
