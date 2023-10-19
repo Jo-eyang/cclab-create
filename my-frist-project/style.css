@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(46, 56, 52);
+    background-color: black;
     color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
@@ -10,8 +10,8 @@ body{
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
 }
-#yellow{
-    color: rgb(247, 238, 148);
+#white{
+    color: white;
 }
 #pink{
     color: rgb(221, 143, 182);
@@ -25,15 +25,12 @@ a:hover{
 }
 
 #content{
-    width: 80%;
+    font-size:larger;
     position: relative;
-    left: 15%;
-    padding: 20px;
-}
-
-.left{
-    float: left;
-    width: 50%;
+    left: 10%;
+    float: center;
+    width: 80%;
+    line-height: 50px;
 }
 
 .right{
@@ -53,6 +50,6 @@ a:hover{
 }
 
 #p5-canvas{
-    width: 10%;
-    height: auto;
+    text-align: center;
+   
 }
