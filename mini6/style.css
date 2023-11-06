@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.big{
+    font-size: 70px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#white{
+    color: white;
+}
+#pink{
+    color: rgb(221, 143, 182);
+}
+a:hover{
+    color:deeppink
+}
+
+#title{
+    text-align: center;
+}
+
+#content{
+    font-size:larger;
+    position: relative;
+    left: 10%;
+    float: center;
+    width: 80%;
+    line-height: 50px;
+}
+
+.right{
+    float: right;
+    width: 50%
+}
+
+.two-columns:after{
+    content:"";
+    display:table;
+    clear:both
+}
+
+#footer{
+    text-align: center;
+    font-size: small;
+}
+
+#p5-canvas{
+    text-align: center;
+   
+}
