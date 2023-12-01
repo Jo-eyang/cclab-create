@@ -3,7 +3,7 @@ let stars = [];
 let col;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(1200,700);
   canvas.parent("p5-canvas")
   //colorMode(HSB)
   mic = new p5.AudioIn();
