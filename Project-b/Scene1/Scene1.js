@@ -17,6 +17,7 @@ function draw() {
   let vol = mic.getLevel();
   console.log(vol);
   volHistory.push(vol);
+  strokeWeight(5)
   stroke(255, 0, 0);
   translate(width / 2, height / 2);
   noFill();
