@@ -6,7 +6,7 @@ body{
 
 .headline{
     width: 100%;
-    padding: 10%;
+    padding: 6%;
     font-size: 50px;
     font-weight: 600;
     text-align: center;
@@ -15,7 +15,7 @@ body{
 .flex-container{
     display:flex;
     justify-content:space-between;
-    width: 900px;
+    width: 1500px;
     margin: auto;
     flex-wrap: wrap;
     margin: 5% auto;
@@ -93,7 +93,8 @@ body{
 
 #p5-canvas{
     text-align: center;
-
+    width: 1500px;
+    height: 500px;
 }
 
 canvas{
