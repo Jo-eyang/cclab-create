@@ -15,7 +15,7 @@ function preload(){
 }
 
 function setup() {
-  let canvas = createCanvas(1200, 800);
+  let canvas = createCanvas(1200, 500);
   canvas.parent("p5-canvas");
   canvas.mouseClicked(togglePlay);
   angleMode(DEGREES); 
@@ -48,7 +48,7 @@ function draw() {
 
 
   if (daytime) {
-    background(200, 20, 100);
+    background(50, 20, 100);
     push()
     translate(width / 2, height / 2);
     beginShape();

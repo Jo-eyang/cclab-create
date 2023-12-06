@@ -1,25 +1,7 @@
 body{
     margin: 0px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(197, 106, 106);
-}
-
-
-.headline{
-    width: 100%;
-    padding-top: 7%;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.headline2{
-    width: 100%;
-    padding-top: 1%;
-    /* padding-bottom: 5%; */
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
+    background-image:linear-gradient(to right,#F9F9FB, #F3F2F8);
+    color: rgb(104, 120, 102);
 }
 
 .flex-container{
@@ -31,6 +13,45 @@ body{
     margin: 5% auto;
 }
 
+.headline{
+    width: 100%;
+    padding-top: 5%;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Yeseva One', serif;
+}
+
+.headline2{
+    width: 100%;
+    padding-top: 1%;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Yeseva One', serif;
+}
+
+.word{
+    padding-top: 2%;
+    width: 100%;
+    font-size:xx-large;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    
+}
+
+
+
+#p5-canvas{
+    text-align: center;
+}
+
+canvas{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .box-1{    
     width: 100%;
     height: 100PX;
@@ -38,11 +59,11 @@ body{
     margin-bottom: 100px;
 }
 
-/* .box-2{
+.box-2{
     width: 450px;
     height: 450px;
     background-color: rgb(245, 227, 125); 
-} */
+}
 
 #menu-overlay{
     position: fixed;
@@ -73,7 +94,7 @@ body{
     text-decoration: none;
     font-size: 2em;
     padding: 10px;
-    color: rgb(255, 145, 209);
+    color: rgb(207, 130, 175);
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
@@ -98,12 +119,3 @@ body{
     transition: 0.5s transform;
 }
 
-#p5-canvas{
-    text-align: center;
-    padding:5%;
-}
-
-canvas{
-    width: 100% !important;
-    height: 100% !important;
-}

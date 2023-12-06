@@ -1,19 +1,19 @@
 let mic, fft;
 let bubbles = [];
 let img;
-let MAX_BUBBLES = 1500;
+let MAX_BUBBLES = 3000;
 let ABS_MIN_BUBBLE_SIZE = 1;
-let ABS_MAX_BUBBLE_SIZE = 300;
+let ABS_MAX_BUBBLE_SIZE = 400;
 let sound;
 let amplitude;
 
 function preload() {
-  img = loadImage('banks.jpg');
+  img = loadImage('forest.jpg');
   sound = loadSound('rainM.mp3')
 }
 
 function setup() {
-  let canvas = createCanvas(1128, 750);
+  let canvas = createCanvas(1800,980);
   canvas.parent("p5-canvas");
   canvas.mouseClicked(togglePlay);
   mic = new p5.AudioIn();
