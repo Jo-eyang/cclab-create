@@ -25,13 +25,12 @@ function setup() {
   colorMode(HSB);
   daytime = true
   
-  
-  
    for (let i = 0; i < NUM_OF_STARS; i++) {
     stars[i] = new star();
   }
 }
 
+//switch between day & night by the mouse
 function mousePressed() {
   if (daytime) {
     daytime = false;
@@ -40,13 +39,14 @@ function mousePressed() {
   }
 }
 
+
 function draw() {
+  //get the volume data
   vol = amplitude.getLevel()
   console.log(vol);
   volHistory.push(vol);
-  
 
-
+  //draw the day time
   if (daytime) {
     background(50, 20, 100);
     push()
@@ -64,18 +64,19 @@ function draw() {
       vertex(x, y);
     }
     endShape();
-
-    
     pop()
   } 
+  //draw the night time
   else {
     background(0, 0.1);
+    //generate stars
      for (let i = 0; i < stars.length; i++) {
       let p = stars[i]
     p.display();
   }
     push()
     translate(width / 2, height / 2);
+    //draw the background circles
     noStroke();
     let hLight = map(vol, 0, 1, 360, 0);
     let size1 = map(vol, 0, 1, 400, 600);
@@ -87,7 +88,7 @@ function draw() {
     circle(0, 0, size2);
     fill(255, 0.06);
     circle(0, 0, size3);
-
+    //draw the earth
     beginShape();
     for (let i = 0; i < 360; i++) {
       let h = map(vol, 0, 1, 360, 0);
@@ -103,9 +104,9 @@ function draw() {
     circle(0, 0, 200);
     pop()
     
-   
   }
 
+  //splice volhistory
   if (volHistory.length > 360) {
     volHistory.splice(0, 1);
   }
@@ -130,7 +131,7 @@ class star {
   }
 }
 
-
+//stop/play the music + switch music&microphone input
 function togglePlay() {
   if (sound.isPlaying() ){
     sound.pause();

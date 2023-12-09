@@ -15,6 +15,7 @@ function draw() {
   background(30,0.1);
   let HUE = map(sin(frameCount*0.01),-1,1,0,360)
   fill(HUE,50,255);
+  //the bars below
   let spectrum = fft.analyze();
   noStroke();
   for (let i = 0; i< spectrum.length; i+=30){
@@ -22,9 +23,9 @@ function draw() {
     let h = -height/2+ map(spectrum[i], 0, 255, height/2,0);
     rect(x+width/2, height, 10, h)
     rect(width/2-x, height, 10, h)
-    
   }
   
+  //the spots above
   let waveform = fft.waveform();
   noFill();
   //beginShape();

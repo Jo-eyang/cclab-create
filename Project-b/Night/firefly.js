@@ -38,11 +38,13 @@ function draw() {
   let level = amplitude.getLevel();
   let lightSize = map(level, 0, 1, 4, 10)
   // console.log(lightSize)
+  //use the image to realize the light effect
   image(img, 0, 0, width, height);
   image(img2, xp-lightSize*width/2, yp-lightSize*height/2-10, lightSize*width, lightSize*height)
   image(img2, xp-lightSize*width/2, yp-lightSize*height/2-10, lightSize*width, lightSize*height)
   image(img2, xp-lightSize*width/2, yp-lightSize*height/2-10, lightSize*width, lightSize*height)
   
+  //draw the fireflies
   translate(xp, yp);
   let waveform = fft.waveform();
   for (let i = 0; i < waveform.length; i += 5) {
@@ -61,6 +63,7 @@ function draw() {
   }
 }
 
+//switch music/microphone input
 function togglePlay() {
   if (sound.isPlaying() ){
     sound.pause();

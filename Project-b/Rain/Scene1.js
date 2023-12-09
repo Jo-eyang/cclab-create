@@ -18,12 +18,10 @@ function setup() {
   canvas.mouseClicked(togglePlay);
   mic = new p5.AudioIn();
   amplitude = new p5.Amplitude()
- 
-
   mic.start();
   
+  //get random position & size of bubbles + fill the color of the pixels
   for (let i = 0; i < MAX_BUBBLES; i++) {
-  
     let randX = random(0, width);
     let randY = random(0, height);
     let randMinSize = random(ABS_MIN_BUBBLE_SIZE, ABS_MIN_BUBBLE_SIZE + 10);
@@ -35,18 +33,20 @@ function setup() {
   }
 }
 
+
 function draw() {
   background(50);
   background(img);
 
+  //get the sound level
   let micLevel = amplitude.getLevel();
   console.log(micLevel)
- 
+
+  //draw&update the bubbles
   for(let bubble of bubbles){
     bubble.update(micLevel);
     bubble.draw();
   }
-
 }
 
 function togglePlay() {
@@ -60,6 +60,7 @@ function togglePlay() {
   }
 }
 
+//bubble class
 class Bubble{
   constructor(x, y, minSize, maxSize, fillColor){
     this.x = x;
